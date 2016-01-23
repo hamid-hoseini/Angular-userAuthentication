@@ -1,0 +1,28 @@
+<link href="/stylesheets/style.css" rel="stylesheet">
+<div class="form">
+  <div class="header">
+    <h2>Sign Up</h2>
+  </div>
+  <div class="login">
+    <form id="loginform" role="form" name="userForm" ng-submit="userRegister()">
+      <ul>
+        <li>
+          <span class="un"><i class="fa fa-user"></i></span><input type="text" required class="text" placeholder="User Name Or Email" ng-model='user.username' id='username'/>
+        </li>
+        <li>
+          <span class="un"><i class="fa fa-lock"></i></span><input type="password" required class="text" placeholder="User Password" ng-model='user.password' id='password'/>
+        </li>
+        <li>
+          <input type="submit" value="SUBMIT" class="btn">
+        </li>
+      </ul>
+    </form>
+  </div>
+  <br/>
+  <div class="sign">
+    <div class="need">Go back to home page</div>
+    <div class="up">
+      <a href="#/agency">Cancel</a>
+    </div>
+  </div>
+</div>
