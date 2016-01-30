@@ -15,6 +15,19 @@ $(function() {
     });
 });
 
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 500) {
+        $("#mynav").addClass("not-transparent");
+        $("#logo").addClass("logoanim");
+    }
+    else {
+        $("#mynav").removeClass("not-transparent");
+        $("#logo").removeClass("logoanim");
+        
+    }
+});
+
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
